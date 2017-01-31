@@ -13,7 +13,8 @@
 use App\User;
 
 
-Route::get('home','PagesController@index');
+Route::get('home','EmployeeController@index');
+Route::get('home/{employees}','EmployeeController@show');
 
 Route::get('users', function () {
     return User::all();
